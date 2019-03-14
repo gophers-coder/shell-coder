@@ -1,0 +1,11 @@
+language: go
+go:
+  - master
+env:
+  - GO111MODULE=on
+notifications:
+  email:
+    recipients:
+      - wuxiaoshen@shu.edu.cn
+script:
+  - echo "Hello shellcoder"
