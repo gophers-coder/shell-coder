@@ -1,14 +1,23 @@
-language: go
-go:
-  - master
-env:
-  - GO111MODULE=on
+language: bash
+
+dist: xenial
+
 notifications:
   email:
     recipients:
       - wuxiaoshen@shu.edu.cn
 
+services:
+  - docker
 before_install:
   - make
+
+before_script:
+  - echo "$DOCKER_PASSWORD" | docker login -u "$DOCKER_USERNAME" --password-stdin
 script:
   - echo "Hello shellcoder"
+
+
+after_success:
+  - docker build -t wuxiaoshen/shellcoder:latest .
+  - docker push wuxiaoshen/shellcoder:latest
