@@ -3,8 +3,11 @@ LABEL maintainer="XieWei(wuxiaoshen@shu.edu.cn)"
 
 WORKDIR /home/src
 
+RUN apt-get update && apt-get install -q -y vim  && apt-get clean;
+
+COPY Makefile .
+
 COPY . .
 
-RUN make
 
 CMD ["bash", "-c", "/home/src/hello.sh"]

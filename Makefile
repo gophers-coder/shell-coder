@@ -4,5 +4,8 @@ PROJECTNAME="shellcoder"
 default:
 	@echo ${PROJECTNAME}
 
-.PHONY: default
+echo:
+	@echo ${PROJECTNAME}
+
+.PHONY: default echo
 
