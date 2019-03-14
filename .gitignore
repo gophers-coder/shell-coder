@@ -1,0 +1,7 @@
+
+# mac
+
+.idea/
+
+# vendor
+vendor/*
