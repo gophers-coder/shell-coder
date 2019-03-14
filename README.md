@@ -44,6 +44,6 @@
 
 @WeChat: wu_xiaoshen
 
-@Zhihu: [谢伟](https://www.zhihu.com/people/wu-xiao-shen-16/activities)
+@ZhiHu: [谢伟](https://www.zhihu.com/people/wu-xiao-shen-16/activities)
 
-@Bilibili:[Wuxiaoshen](https://space.bilibili.com/10056291)
+@BiliBili:[Wuxiaoshen](https://space.bilibili.com/10056291)
