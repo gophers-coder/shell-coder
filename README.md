@@ -3,7 +3,7 @@
 > 2019年后端工程师第三期：shell 教程
 
 [![Build Status](https://travis-ci.com/gophers-coder/shellcoder.svg?branch=master)](https://travis-ci.com/gophers-coder/shellcoder)
-[![Docker Build Status](https://img.shields.io/docker/cloud/build/wuxiaoxiaoshen/shellcoder.svg)](https://hub.docker.com/r/wuxiaoshen/shellcoder)
+[![Docker Build Status](https://img.shields.io/docker/build/wuxiaoxiaoshen/shellcoder.svg)](https://hub.docker.com/r/wuxiaoshen/shellcoder)
 
 大纲：
 
