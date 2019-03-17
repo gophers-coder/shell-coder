@@ -19,7 +19,7 @@
 - 文本处理
     - grep
     - awk
-    - seek
+    - sed
 - Makefile
 
 
