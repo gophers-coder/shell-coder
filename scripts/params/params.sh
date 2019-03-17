@@ -18,7 +18,7 @@ firstParam=${1}
 echo "start execute command"
 echo ${fileName} : ${firstParam}
 
-echo ""
+echo 参数的个数 ${#}
 
 printf "%-10s   %-20s\n" 文件名称   参数
 printf "%-10s   %-20s\n" ${fileName}    ${firstParam}
