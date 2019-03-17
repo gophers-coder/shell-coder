@@ -26,7 +26,7 @@ grep '兼' -l text_en.txt text.txt
 
 echo "hello Golang" | grep -i 'g'
 
-cat text_en.txt | grep -e "bhan" -e bhandari
+cat text_en.txt | grep -e "bhan" -e "bhandari"
 
 
 cat text_en.txt | grep -o  "^[a-z]" | wc -l

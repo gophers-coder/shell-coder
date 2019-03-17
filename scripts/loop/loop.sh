@@ -14,6 +14,7 @@ for (( VAR = 0; VAR < ${LOOP_LIMIT}; ++VAR )); do
      SUM=`expr ${SUM} + ${VAR}`
 done
 
+
 echo ${SUM}
 
 flag=0

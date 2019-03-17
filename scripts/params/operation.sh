@@ -24,8 +24,8 @@
 5. 字符串运算符
     - =
     - !=
-    - -z
-    - -n
+    - -z: zero 长度是否0 ，为0 为 true
+    - -n:                不为 0 为 true
     - $
 5. 文件测试
     - f
@@ -47,7 +47,7 @@ printf "%-10d %-10d %-10s %-10d\n" ${numberOne} ${numberTwo} "/" `expr ${numberO
 printf "%-10d %-10d %-10s %-10d\n" ${numberOne} ${numberTwo} "%" `expr ${numberOne} % ${numberTwo}`
 
 
-if [[ ${numberTwo} -ge ${numberOne} ]]
+if [[ ${numberTwo} -ge ${numberOne} ]];
 then
     echo "${numberTwo}" ">=" ${numberOne}
 else

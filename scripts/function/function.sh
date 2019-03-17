@@ -12,15 +12,15 @@ EOF
 
 function Hello() {
     echo "Hello World"
-    echo "函数参数的个数" $#
-    echo "函数参数的第一个参数" $1
+    echo "函数参数的个数" ${#}
+    echo "函数参数的第一个参数" ${1}
     local number=1
-    LOOP_LIMIT=$#
+    LOOP_LIMIT=${#}
     for (( VAR = 0; VAR < ${LOOP_LIMIT}; ++VAR )); do
-        printf "%-10d %-10s\n" ${VAR} $1
+        printf "%-10d %-10s\n" ${VAR} ${1}
     done
-    
-    for VAR in $* ; do
+
+    for VAR in ${*} ; do
         printf "%-10s\n" ${VAR}
     done
 }
@@ -39,4 +39,4 @@ function sumNumber() {
 }
 
 sumNumber
-echo $?
+echo ${?}

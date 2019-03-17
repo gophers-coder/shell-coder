@@ -20,14 +20,17 @@ printf "%-20s %-10s\n" ${paramList[2]} ${#paramList[2]}
 printf "%-20s %-10s\n" ${paramList[3]} ${#paramList[3]}
 printf "%-20s %-10s\n" ${paramList[4]} ${#paramList[4]}
 
+paramList+=("python")
+
 
 echo ${paramList[*]}
+echo ${paramList[@]}
 
 for var in ${paramList[*]} ; do
     echo ${var}
 done
 
-for (( i = 0; i < ${#paramList[@]}; ++i )); do
+for (( i = 0; i < ${#paramList[*]}; ++i )); do
     echo ${paramList[i]}
 done
 

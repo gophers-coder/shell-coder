@@ -1,11 +1,16 @@
 PROJECTNAME="shellcoder"
 
 
-default:
-	@echo ${PROJECTNAME}
+first:
+	@go version
+
+default: first
+	echo ${PROJECTNAME}
+
+
 
 echo:
 	@echo ${PROJECTNAME}
 
-.PHONY: default echo
+.PHONY: default echo first
 

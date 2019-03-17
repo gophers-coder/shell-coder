@@ -8,6 +8,9 @@ EOF
 
 echo "请输入参数:"
 
+read number
+echo ${number}
+
 while :
 do
     read var
